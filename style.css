@@ -1,0 +1,120 @@
+*{transition: all .1s ease-in;}
+
+/*break settings*/
+*{
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	transition: all 0.1s ease-in;
+}
+
+/*here my page set color, size text,  and border*/
+body{
+	min-height:100%;
+	background-color:#3b3f45;
+	font:300 26px/1.3 'Tebuchet MC', Tebuchet, Arial, sans-serif;
+	padding:0px;
+	margin:0;
+	border:20px solid white;
+
+}
+html{
+	height:100%;
+}
+
+/*this id from teg HEADER for for increased specificity
+#head-1{
+	margin:10px;
+}
+*/
+
+/*here described my header  */
+header.text-color{
+	font-size:25px;
+	text-align:center;
+	color:#EB7E7E;
+	background-color:#4A4F56;
+	margin-bottom:20px;
+}
+/*here described <li> */
+li{
+	background-color:#88839E;
+	padding:5px;
+	color:white;
+
+}
+/*class for DIV, this main area*/
+.container{
+	margin:0 auto;
+	/*padding:40px 20px;*/
+	max-width:1000px;
+}
+footer {
+	font-size:25px;
+	text-align:center;
+		color:#EB7E7E;
+		margin:10 ;
+	padding:20px ;
+	max-width:1000px;
+		background-color:#4A4F56;
+
+}
+
+/*here described my list (<ul>)*/
+.list{
+	margin-bottom:10px;
+	list-style:none;
+}
+/* this 1-st line makes label block element and add padding and change cursor*/
+.list label{
+	display:block;
+	padding:15px;
+	cursor:pointer;
+
+}
+/*make lines different colors */
+li:nth-child(2n){
+	background-color:#7A7593;
+}
+
+/*change color and add border when hover*/
+li:hover{
+	background-color:#5F6173;
+	border:4px solid white;
+}
+/*if li push */
+li:active{
+	border:4px solid white;
+	background-color:#C3435F;
+}
+/*input[type="checkbox"] + span{
+	text-decoration:line-through;
+} */
+/*strikethrough line if checked */
+.list [type="checkbox"]:checked +span{
+	text-decoration:line-through;
+	color:#a3a0b5;
+}
+/*style my checkbox*/
+.list [type="checkbox"]{
+	width:26px;
+	height:26px;
+	vertical-align: middle;
+	position: relative;
+	top:-2px;
+	cursor:pointer;
+	margin-right:10px;
+}
+/*font size for small text in li>label>span*/
+small{
+	font-size: 16px;
+}
+
+/*brackets for small text in li>label>span>small */
+.list small:before{
+	content: '(';
+}
+.list small:after{
+	content: ')';
+}
